@@ -1,0 +1,71 @@
+/* 📁 frontend/src/components/Register.css */
+
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #e6f0ff, #ffffff);
+}
+
+.register-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.register-container h2 {
+  color: #d60b0b;
+  margin-bottom: 24px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.register-form input,
+.register-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #4a4ee6;
+}
+
+.register-form button {
+  padding: 12px;
+  background-color: #3333dd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+  background-color: #1f1fc1;
+}
+
+.login-link {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #4a4ee6;
+  text-decoration: none;
+  font-weight: bold;
+}

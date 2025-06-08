@@ -1,0 +1,117 @@
+/* 📁 frontend/src/components/LoginForm.css */
+
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT: Hình nền */
+.login-left {
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT: Form đăng nhập */
+.login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fbf1;
+  padding: 20px;
+}
+
+.login-form {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.login-form h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d61111;
+  margin-bottom: 10px;
+}
+
+.login-form h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.login-logo {
+  width: 100px;
+  height: 140px;
+  margin: 16px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #4a4ee6;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a4ee6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-form button:hover {
+  background-color: #383bc3;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .login-left {
+    height: 200px;
+  }
+
+  .login-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .login-right {
+    flex: none;
+    height: auto;
+  }
+}
